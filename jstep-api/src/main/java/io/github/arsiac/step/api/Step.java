@@ -13,14 +13,14 @@ public interface Step {
      *
      * @param context 步骤上下文
      */
-    default void before(io.github.arsiac.step.api.StepContext context) {}
+    default void before(StepContext context) {}
 
     /**
      * 后置步骤
      *
      * @param context 步骤上下文
      */
-    default void after(io.github.arsiac.step.api.StepContext context) {}
+    default void after(StepContext context) {}
 
     /**
      * 执行步骤
@@ -28,7 +28,7 @@ public interface Step {
      * @param context 步骤上下文
      * @param chain   步骤链
      */
-    default void doStep(io.github.arsiac.step.api.StepContext context, io.github.arsiac.step.api.StepChain chain) {
+    default void doStep(StepContext context, StepChain chain) {
         context.setCurrentStep(this);
         before(context);
         chain.doStep(context);
