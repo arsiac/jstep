@@ -5,7 +5,7 @@
 ### Create step
 
 ```java
-import com.github.arsiac.step.api.Step;
+import io.github.arsiac.step.api.Step;
 
 public class DemoStep implements Step {
 
