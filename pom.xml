@@ -11,6 +11,7 @@
     <packaging>pom</packaging>
     <name>${project.artifactId}</name>
     <url>https://github.com/arsiac/jstep</url>
+    <description>Java Step Framework</description>
 
     <properties>
         <revision>1.0.0</revision>
